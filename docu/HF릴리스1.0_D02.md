@@ -387,8 +387,8 @@ HyperFlow의 개발 환경에서 플로우그래프를 구축하고 실행하는
 ### 플로우그래프 편집기
 
 **플로우그래프 편집기**란 플로우 그래프를 생성하고 수정하는 주요 작업 공간입니다. HyperFlow 통합 개발 환경(IDE) 내에서 제공되며, 기본 UI 모드 패널에서 "Editor"를 선택하면 접근할 수 있습니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/e0c7bcea-aa17-47b8-8acf-a202f6b15e6c/image.png)
+![구축및실행](./images/hf02_design_01.png)
+<br/>
 
 ### 플로우그래프 생성 및 관리
 
@@ -401,16 +401,16 @@ HyperFlow의 개발 환경에서 플로우그래프를 구축하고 실행하는
 3. **새로 생성(Creating)** – 메인 드롭다운 메뉴에서 **"New flow-graph"** 기능을 사용하여 처음부터 새롭게 생성
 
 각 방법에 따라 선택하면 플로우 그래프의 이름, 설명, 디렉터리 내 태그 설정, 공개/비공개 여부를 지정할 수 있는 대화창이 열립니다. 이후에는 **"Flow-Graphs"** 드롭다운 메뉴에서 **"Edit Details"**를 선택하여 세부 정보를 수정할 수 있습니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/5ac16317-a156-43f7-ac7d-b249b7c63f98/image.png)
+![구축및실행](./images/hf02_design_02.png)
+<br/>
 
 ### **플로우그래프 생성하기: 노드를 생성하고 노드끼리 연결하기**
 
 플로우 그래프는 **노드(Node)** 를 프로세스 흐름선과 데이터 흐름선으로 연결하여 구성됩니다. 노드는 좌측 디렉터리 창의 **"Node"** 탭에서 선택할 수 있으며, 기능별 그룹으로 정리되어 있습니다. 현재 HyperFlow에서는 약 40가지의 노드 유형을 제공하며, 각 노드는 AI 애플리케이션 및 워크플로우 개발과 관련된 특정 작업을 수행하도록 설계되어 있습니다.
 
 노드를 플로우 그래프에 추가하려면 **"Node"** 탭에서 원하는 노드를 선택하여 플로우 그래프 작업 공간으로 드래그하면 됩니다. 예를 들어, 간단한 챗봇을 만들려면 먼저 사용자 입력을 받는 **User Input** 노드를 추가하고, 이후 사용자의 입력 프롬프트를 LLM에 전달하고 응답을 받는 **Call LLM** 노드를 연결할 수 있습니다.\
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/05d95cac-841b-40ea-aaef-9fdda3902df7/image.png)
+![구축및실행](./images/hf02_design_03.png)
+<br/>
 
 노드는 두 가지 유형의 선(커넥터)으로 연결되어 플로우 그래프를 구성합니다.
 
@@ -425,8 +425,8 @@ HyperFlow의 개발 환경에서 플로우그래프를 구축하고 실행하는
 루프형 챗봇을 만들려면, **Call LLM** 노드의 프로세스 흐름 출력을 **User input** 노드의 입력에 다시 연결하면 됩니다.
 
 HyperFlow는 *directed cyclic graphs*를 지원하여, 복잡한 AI 애플리케이션 및 워크플로우 구축이 가능합니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/6a10a403-d23a-4379-a0af-70456be3a273/image.png)
+![구축및실행](./images/hf02_design_04.png)
+<br/>
 
 ### 순수 데이터 노드
 
@@ -435,6 +435,7 @@ HyperFlow는 *directed cyclic graphs*를 지원하여, 복잡한 AI 애플리케
 순수 데이터 노드는 플로우 그래프 엔진에 의해 **"온디맨드(on-demand)"** 방식으로 실행됩니다. 즉, 프로세스 흐름 내에서 해당 데이터를 필요로 하는 노드가 실행될 때 자동으로 호출됩니다. 또한, 순수 데이터 노드는 다른 순수 데이터 노드에서 입력을 받을 수도 있으며, 이를 통해 주요 프로세스 흐름 내에서 **데이터 기반 서브그래프**를 형성할 수 있습니다.
 
 이처럼 HyperFlow는 **프로세스 기반 흐름과 데이터 기반 흐름을 하나의 플로우 그래프 내에서 결합**할 수 있는 기능을 제공합니다. 이를 통해 복잡한 연결을 단순화하면서도 유연한 데이터 처리가 가능해집니다.
+<br/>
 
 ### 플로우그래프 편집 및 관리
 
@@ -445,12 +446,13 @@ HyperFlow는 *directed cyclic graphs*를 지원하여, 복잡한 AI 애플리케
 - **복사/붙여넣기(Copy/Paste):** 특정 노드를 복사하여 다른 플로우 그래프에서 재사용할 수 있습니다.
     - 하나 이상의 노드를 선택한 후 **Command + C** 또는 **Control + C**를 눌러 복사하고, **Command + V** 또는 **Control + V**를 눌러 붙여넣습니다.
     - 또는 노드를 마우스 오른쪽 버튼으로 클릭하여 컨텍스트 메뉴에서 **Copy**, **Cut**, **Paste** 기능을 선택할 수도 있습니다.
+<br/>
 
 ### **노드 파라미터**
 
 HyperFlow의 각 노드는 동작을 제어하는 파라미터**(하이퍼파라미터)** 를 가지고 있으며, 각 파라미터는 설정이 가능합니다. 편집기 화면에서 노드를 클릭하면, 오른쪽 패널에 해당 노드의 파라미터가 표시되며 이를 확인하고 수정할 수 있습니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/231096d6-55b6-4aa4-b065-20fcd63c7a78/image.png)
+![구축및실행](./images/hf02_design_05.png)
+<br/>
 
 초기 설정을 단순화하기 위해 대부분의 노드는 기본값이 미리 지정되어 있습니다. 예를 들어, **User Input** 노드는 기본적으로 텍스트 입력을 받도록 설정되어 있지만, 파일 업로드를 허용하도록 구성할 수도 있습니다. **Call LLM** 노드는 기본적으로 채팅 기반 호출을 수행하지만, 이미지, 오디오, 비디오 등 다양한 미디어 유형을 생성하도록 설정할 수도 있습니다.
 
@@ -472,8 +474,9 @@ HyperFlow의 독창적 기능 중 하나는 **매개변수 선택을 실행 시�
 2. 오른쪽에 두 개의 패널이 열립니다:
 - **파라미터 패널(Parameter Panel):** 사용자 입력 및 실행 중 파라미터 조정이 가능합니다.
 - **실행 세션 로그(Run Session Log):** 플로우 그래프의 실행 이력을 상세히 표시하며, 입력값, 출력값, 매개변수 설정 등 관련 정보를 확인할 수 있습니다.
+![구축및실행](./images/hf02_design_06.png)
+<br/>
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/772e79d2-0aee-439a-94f3-d08954469af5/image.png)
 
 플로우 그래프가 실행되는 동안, **실행 세션 로그(Run Session Log)** 는 각 단계의 정보를 실시간으로 업데이트합니다. 필요에 따라 세부 정보를 확장하거나 축소하여 확인할 수 있습니다.
 
@@ -498,26 +501,29 @@ HyperFlow의 독창적 기능 중 하나는 **매개변수 선택을 실행 시�
 ### 플로우 그래프 구축하기
 
 첫 번째 단계는 새로운 플로우 그래프를 생성하고 편집기에서 여는 것입니다. 먼저 두 개의 Call LLM 노드를 추가합니다. 하나는 이미지 생성 역할을 하고, 다른 하나는 이미지 검토 역할을 수행합니다. 이러한 노드는 노드 탭에서 드래그하여 추가하거나, 편집기의 오른쪽 클릭 컨텍스트 메뉴를 사용하여 추가할 수 있습니다. 또한, 초기 이미지 요청을 받을 **User input** 노드와, 검토 에이전트에게 지침을 제공할 **Instructions** 노드도 필요합니다.
+![구축및실행](./images/hf02_design_07.png)
+<br/>
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/6a289869-08d1-42f3-ac23-f58ef9b6f7aa/image.png)
 
 처음 추가한 노드는 Call LLM 노드이며, 플로우 그래프에서는 첫 번째로 추가된 노드가 자동으로 시작 노드로 지정됩니다. 하지만 우리는 **User input** 노드를 시작점으로 설정해야 합니다. 이를 위해 **User input** 노드를 마우스 오른쪽 버튼으로 클릭한 후 **"Set as Start Node"** 를 선택합니다.
+<br/>
 
 ### 프로세스 흐름 연결
 
 다음으로, 보라색 프로세스 흐름 선을 사용하여 노드들을 연결하여 프로세스 흐름을 구성합니다. 실행 순서는 **User Input → 이미지 생성 LLM → 리뷰어 LLM** 순서로 설정합니다. 반복적인 프롬프트 개선 과정을 관리하기 위해 **Loop Controller** 노드를 추가합니다. 리뷰어 LLM의 프로세스 흐름 출력을 **Loop Controller** 노드에 연결합니다. 그런 다음 **Loop Controller**의 "max loop count" 매개변수를 3과 같이 특정 값으로 설정하여 반복 실행 횟수를 제한합니다. **Loop Controller**의 상단 출력 커넥터는 **"loop continue"** 출구이며, 이를 **Image Generator LLM**의 입력 커넥터와 연결하여 반복 실행 구조를 완성합니다.
+![구축및실행](./images/hf02_design_08.png)
+<br/>
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/0367d13a-662b-4e67-bae9-3ad5c6299537/image.png)
 
 HyperFlow에서는 매개변수를 **잠금(Locking)** 및 **해제(Unlocking)** 할 수 있습니다. 잠금이 해제된 매개변수는 해당 노드에서 플로우 그래프 실행을 일시 중지시키며, 실행 중에 값을 조정할 수 있도록 합니다. 반면, 잠긴 매개변수는 사전에 설정된 값을 사용하며 실행을 멈추지 않습니다.
 
 이번 설정에서는 **"max loop count"** 매개변수를 잠가, 루프 컨트롤러에서 실행이 멈추지 않고 플로우 그래프가 원활히 진행되도록 합니다. 매개변수는 개별적으로 잠글 수도 있으며, 매개변수 위에 마우스를 올리면 나타나는 **잠금 아이콘**을 클릭하여 설정할 수 있습니다. 또한, **"Lock all"** 버튼을 사용하면 매개변수 패널의 모든 매개변수를 한 번에 잠글 수도 있습니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/ef1edd57-6a00-4329-98a9-a9269f8e4e56/image.png)
+![구축및실행](./images/hf02_design_09.png)
+<br/>
 
 기본적으로 **Call LLM** 노드는 채팅 또는 텍스트 생성 기능이 활성화되어 있습니다. **Image Generator LLM**의 매개변수를 잠금 해제하고, 역할(Role)을 **"Image generator"** 로 설정해야 합니다. 이 설정을 변경하면 **이미지 생성을 지원하는 LLM 서비스 목록으로 자동 업데이트**되며, 해당 서비스 중에서 적절한 모델을 선택할 수 있습니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/3ab3071c-a3dd-4a72-b1e1-8f5e9c159637/image.png)
+![구축및실행](./images/hf02_design_10.png)
+<br/>
 
 ### 데이터 흐름 연결
 
@@ -526,8 +532,8 @@ HyperFlow에서는 매개변수를 **잠금(Locking)** 및 **해제(Unlocking)**
 그러나 현재 HyperFlow 버전에서는 하나의 데이터 흐름 입력 커넥터가 하나의 입력 소스만 받을 수 있습니다. 이를 해결하기 위해 **Merge inputs** 노드를 추가합니다. 이 노드는 원래 사용자 프롬프트와 **Reviewer LLM**에서 생성된 개선된 프롬프트를 병합하여 가장 최근에 받은 데이터를 전달합니다. **User input** 노드의 `User prompt` 출력은 **Merge inputs** 노드의 `Input 1`에 연결하고, **Reviewer LLM**의 `Generated response` 출력은 `Input 2`에 연결합니다. 마지막으로, **Merge inputs** 노드의 출력은 **Image Generator LLM**의 `User prompt` 입력과 연결합니다.
 
 아래에서 최종 구성된 플로우 그래프를 확인할 수 있습니다. HyperFlow의 자동 배선 레이아웃은 일반적으로 직관적인 연결을 제공하지만, 경우에 따라 배선이 다른 노드 뒤에 숨겨지거나 실제 연결된 포트와 다르게 보일 수도 있습니다. 출력 포트가 어디에 연결되어 있는지 확인하려면, 해당 출력 포트의 이름을 클릭하면 됩니다. 그러면 아래 이미지에서처럼 모든 연결 지점과 배선이 빨간색으로 강조 표시됩니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/8568164c-976d-4d12-bf5a-a0ec43c919a8/image.png)
+![구축및실행](./images/hf02_design_11.png)
+<br/>
 
 ### LLM 지시 - 프롬프트 엔지니어링
 
@@ -562,8 +568,8 @@ LLM 기반 애플리케이션의 효과는 **프롬프트의 품질**에 크게 
 프롬프트 엔지니어링은 **반복적인 실험, 관찰, 조정**을 필요로 하며, LLM 기반 AI 애플리케이션을 구축하는 과정에서 **가장 많은 신중함과 실험이 요구되는 부분** 중 하나입니다. 효과적이고 신뢰할 수 있는 생성형 AI 애플리케이션을 개발하려면 이 기술을 숙달하는 것이 필수적입니다.
 
 현재는 이 지침을 **잠가(Lock)** 두지만, 애플리케이션이 개발 및 테스트를 거듭하면서 **추후 재검토 및 개선이 필요할 가능성이 높다는 점을 염두에 두어야 합니다**.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/42e08e1c-3fb2-4a31-bd8f-ec3b4c7978e4/image.png)
+![구축및실행](./images/hf02_design_12.png)
+<br/>
 
 ### 순수 데이터 노드
 
@@ -572,8 +578,8 @@ LLM 기반 애플리케이션의 효과는 **프롬프트의 품질**에 크게 
 플로우 그래프를 실행하기 전에 각 노드의 매개변수를 검토합니다. **Merge inputs** 노드는 실행 중 변경할 필요가 없으므로 매개변수를 **잠가(Lock)** 둘 수 있습니다. **Image Generator LLM**의 경우, 적절한 LLM 서비스(예: OpenAI)와 이미지 생성 모델(예: DALL-E 3)을 선택합니다. 또한 생성된 이미지를 체계적으로 정리하기 위해 태그를 추가할 수도 있습니다. **Reviewer LLM**의 경우, 이미지 분석이 가능한 멀티모달 모델(예: OpenAI GPT-4.0)을 선택하고, 모델 선택을 잠가 두어 실행 중 변경되지 않도록 설정합니다.
 
 각 반복 루프에서 **수정된 이미지 프롬프트를 확인할 수 있도록 중단점을 추가**합니다. 이를 위해 **Image Generator LLM**을 마우스 오른쪽 버튼으로 클릭한 후 **"Toggle breakpoint"** 를 선택하면 됩니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/52d8b8c6-dcf4-4caa-871c-dc94e92f273e/image.png)
+![구축및실행](./images/hf02_design_13.png)
+<br/>
 
 ### 테스트 챗봇 모드에서 플로우 그래프 실행하기
 
@@ -582,8 +588,8 @@ LLM 기반 애플리케이션의 효과는 **프롬프트의 품질**에 크게 
 테스트 챗봇의 **매개변수 패널**은 **사용자의 초기 입력을 요청**합니다. 예를 들어, 다음과 같은 이미지 요청을 입력할 수 있습니다. *"빨간 코트를 입고 얼음 위에서 신나게 스케이트를 타는 행복한 펭귄."*
 
 **Image Generator LLM**에 설정된 **중단점(Breakpoint)** 때문에, 플로우 그래프는 해당 노드에서 실행을 일시 정지합니다.이때 **단계 컨트롤러 버튼(Step Controller Buttons)** 이 나타나며, 실행 세션 로그에는 **"Waiting on next step"** 이 표시됩니다. "Step"을 누르면 현재 노드가 실행되고 다음 노드에서 다시 일시 정지됩니다. "Continue"를 누르면 **다음 사용자 입력, 중단점, 혹은 플로우 그래프 종료 시점까지 실행이 계속됩니다**.**실행 세션 로그**에서는 **각 단계의 상세 실행 정보를 확인**할 수 있으며, **Merge inputs** 노드의 출력을 직접 확인하여 **가장 최근에 전달된 데이터가 어떻게 처리되는지 분석할 수 있습니다**.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/a22a959e-6e6b-4438-b9f4-d8a828196437/image.png)
+![구축및실행](./images/hf02_design_14.png)
+<br/>
 
 Image Generator LLM을 단계별로 실행하면서 선택한 이미지 생성 모델에 요청을 보냅니다. 생성된 이미지는 테스트 챗봇 창에 표시됩니다.
 
@@ -596,20 +602,20 @@ Image Generator LLM을 단계별로 실행하면서 선택한 이미지 생성 �
 ### 플로우그래프 개선하기
 
 플로우 그래프는 더욱 개선될 수 있습니다. 고정된 반복 횟수를 사용하는 대신, **Choose path** 노드를 추가하여 사용자가 반복을 계속할지 여부를 결정하도록 할 수 있습니다. **Choose path** 노드는 사용자에게 **"Keep Going"** 또는 **"Stop"** 과 같은 선택지를 제공합니다. **"Keep Going"** 경로는 **Image Generator LLM**으로 다시 연결되어 프롬프트 개선과 이미지 생성을 반복합니다. **"Stop"** 경로는 연결되지 않은 상태로 유지되어 플로우 그래프 실행을 종료합니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/887c417a-adb6-49f4-8e5e-2a092f2038c7/image.png)
+![구축및실행](./images/hf02_design_15.png)
+<br/>
 
 ### 플로우 그래프를 더욱 개선하기: 사용자 상호작용 추가
 
 초기 플로우 그래프는 자동 반복 루프를 통해 이미지 개선을 수행하도록 설계되었습니다. 그러나 이를 더욱 향상시키는 방법 중 하나는 사용자가 직접 개선 과정에 참여할 수 있는 기능을 추가하는 것입니다. 사용자가 직접 의견을 제공하고 LLM이 보다 원하는 결과로 조정될 수 있도록 유도하는 방식입니다. 이 섹션에서는 플로우 그래프를 수정하여 사용자 상호작용을 포함하는 예제를 설명하며, 이를 통해 보다 협력적이고 동적인 시스템으로 전환하는 방법을 소개합니다.
 
 이 개선된 버전에서는 워크플로우 내에 새로운 분기를 추가하여 사용자가 이미지 생성 과정에 직접 개입할 수 있도록 합니다. 이를 위해 **Choose path** 노드를 수정하고, 사용자 입력을 처리하는 새로운 경로를 추가합니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/3aa860a3-32fb-4c38-b948-e74d28aeba57/image.png)
+![구축및실행](./images/hf02_design_16.png)
+<br/>
 
 다음은 수정된 부분에 대한 자세한 설명입니다.
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b70dea2a-0f0a-44d5-ae81-89a1124d77c1/34d28875-460f-425d-bd69-c2f7c4bde86a/image.png)
+![구축및실행](./images/hf02_design_17.png)
+<br/>
 
 **Choose path 노드 수정**
 
@@ -645,8 +651,9 @@ Image Generator LLM을 단계별로 실행하면서 선택한 이미지 생성 �
 ### HyperFlow AI 도우미 챗봇
 
 현재 HyperFlow IDE에는 **실험적인 RAG 기반 보조 챗봇**이 도입되어 있습니다. 이 챗봇은 최신 HyperFlow 문서와 기타 배경 자료를 학습하여 작동합니다. 완벽하지는 않지만, 문서에서 적절한 내용을 찾아낼 수 있는 경우가 많아 HyperFlow를 익히는 데 도움을 줄 수 있습니다. 이 챗봇은 물론 **HyperFlow를 활용해 개발되었으며**, 실제로 RAG 플로우 그래프를 다룬 튜토리얼 영상 5에서 나온 예제에서 시작되었습니다. 예상보다 적은 학습 데이터로도 뛰어난 성능을 보였기 때문에, 이를 HyperFlow 내에서 임베드할 수 있는 챗봇 형태로 감싸 IDE에 직접 탑재하게 되었습니다!
-
+![구축및실행](./images/hf02_design_18.png)
 <br/>
+
 
 [[TOP]](#index)
 
