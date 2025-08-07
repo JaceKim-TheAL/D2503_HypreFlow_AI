@@ -75,9 +75,9 @@ HyperFlow의 핵심은 **플로우 그래프 시스템** 입니다. 특화된 �
 
 HyperFlow가 처음이신가요? 저희가 준비한 아래의 자료들을 참고해 빠르게 시작해보세요:
 
-- [**플로우 그래프 이해하기](https://www.notion.so/Flow-graph-191771982bb7804aa682ec885ccd6f80?pvs=21):** HyperFlow의 시각적 프로그래밍 시스템에 대한 기본 개념을 배울 수 있습니다.
-- [**지식베이스 튜토리얼](https://www.notion.so/tutorials/knowledge-base.md):** 문서 기반 질문에 답변하는 RAG 시스템을 구축해봅니다.
-- [**노드 레퍼런스](https://www.notion.so/nodes/index.md):** 다양한 기능을 제공하는 HyperFlow의 노드 라이브러리를 확인해보세요.
+- [**플로우 그래프 이해하기**](https://www.notion.so/Flow-graph-191771982bb7804aa682ec885ccd6f80?pvs=21): HyperFlow의 시각적 프로그래밍 시스템에 대한 기본 개념을 배울 수 있습니다.
+- [**지식베이스 튜토리얼**](https://www.notion.so/tutorials/knowledge-base.md): 문서 기반 질문에 답변하는 RAG 시스템을 구축해봅니다.
+- [**노드 레퍼런스**](https://www.notion.so/nodes/index.md): 다양한 기능을 제공하는 HyperFlow의 노드 라이브러리를 확인해보세요.
 <br/>
 
 ## 하이퍼플로우 커뮤니티에서 더 자세한 정보를 알아보세요
