@@ -392,23 +392,16 @@ FAISS 벡터 데이터베이스를 생성하려면, 먼저 다음과 같은 **�
 ### Product Quantization
 
 **512차원 이상의 고차원 임베딩**을 사용할 경우, Product Quantization(PQ)을 적용하면 정확도 손실을 최소화하면서 메모리 사용량을 획기적으로 줄일 수 있습니다.
-
-![create-faiss-with-pq.png](attachment:b6d4eeb5-c8e4-4b01-89d9-efd66464a1eb:create-faiss-with-pq.png)
+![지식DB생성](./images/hf03_create_kdb.png)
+<br/>
 
 **FAISS에 적용 할 PQ 설정 권장값**
 
 | 항목 | 설명 | 권장 |
 | --- | --- | --- |
-| **압축 활성화
-(Enable compression)** | Product Quantization(PQ) 기능의 사용 여부를 설정합니다. | 512차원 이상의 고차원 벡터에 대해 활성화하는 것이 좋습니다. |
-| **서브양자화기 수
-(Subquantizers, m)** | 벡터를 분할할 세그먼트(서브벡터)의 개수입니다. | 차원 수에 따라 설정:
-1500 초과 : 32
-768~1500 : 16
-768미만 : 8
-(반드시 전체 차수의 약수여야 합니다) |
-| **서브양자화기당 비트 수
-(Bits per subquantizer)** | 양자화 정밀도를 결정합니다 | 일반적으로는 8비트를 사용하며, 16비트는 더 높은 정확도를 제공하지만 압축률은 낮습니다. |
+| **압축 활성화 <br/> (Enable compression)** | Product Quantization(PQ) 기능의 사용 여부를 설정합니다. | 512차원 이상의 고차원 벡터에 대해 활성화하는 것이 좋습니다. |
+| **서브양자화기 수 <br/> (Subquantizers, m)** | 벡터를 분할할 세그먼트(서브벡터)의 개수입니다. | 차원 수에 따라 설정: <br/> 1500 초과 : 32 <br/> 768~1500 : 16 <br/> 768미만 : 8 <br/> (반드시 전체 차수의 약수여야 합니다) |
+| **서브양자화기당 비트 수 <br/> (Bits per subquantizer)** | 양자화 정밀도를 결정합니다 | 일반적으로는 8비트를 사용하며, 16비트는 더 높은 정확도를 제공하지만 압축률은 낮습니다. |
 
 **임베딩 차원 수에 따른 권장 설정값**
 
@@ -423,6 +416,7 @@ FAISS 벡터 데이터베이스를 생성하려면, 먼저 다음과 같은 **�
 
 > !중요: Subquantizer의 수(m)은 반드시 **임베딩 차원 수의 약수**여야 합니다. 필요한 경우, 시스템에서 이 값을 자동으로 조정합니다.
 > 
+<br/> 
 
 ## FAISS 벡터 데이터베이스 검색하기
 
@@ -450,20 +444,17 @@ FAISS 벡터 DB에서 유사도 검색을 수행할 때는 여러 파라미터�
 ### PQ 검색 최적화
 
 **Product Quantization(PQ)** 인덱스를 사용할 경우,검색 품질을 높이기 위한 **추가적인 파라미터 설정**이 필요합니다.
-
-![search-faiss-with-pq.png](attachment:505fd516-53e9-4e24-a88c-0ad9e92e2e58:search-faiss-with-pq.png)
+![지식DB검색](./images/hf03_search_kdb.png)
+<br/>
 
 PQ를 적용해 FAISS 검색하기
 
 | 항목 | 설명 | 권장 |
 | --- | --- | --- |
-| **Refine PQ 검색 결과
-(Refine PQ search results)** | 보다 정확한 거리 계산을 활성화합니다. | PQ 인덱스를 사용할 경우 활성화 권장 (정확도 향상) |
+| **Refine PQ 검색 결과 <br/> (Refine PQ search results)** | 보다 정확한 거리 계산을 활성화합니다. | PQ 인덱스를 사용할 경우 활성화 권장 (정확도 향상) |
 | **Refinement factor** | 거리 재계산을 위해 얼마나 많은 후보를 추가로 가져올지 설정합니다. | 고차원 벡터 (>1500): 8-16
 중간 차원 벡터: 4-8 |
-| **사전 계산된 테이블 사용
-(Use precomputed tables)** | PQ 검색 속도를 높이기 위한 최적화 기능입니다. | 기본값 유지 권장
-(검색 속도 향상, 메모리 소폭 증가) |
+| **사전 계산된 테이블 사용 <br/> (Use precomputed tables)** | PQ 검색 속도를 높이기 위한 최적화 기능입니다. | 기본값 유지 권장 <br/> (검색 속도 향상, 메모리 소폭 증가) |
 
 **PQ 검색 시 권장 설정:**
 
