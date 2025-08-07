@@ -91,7 +91,7 @@
   </tr>
 </table>
 
-### 서비스 예시
+### 산업별 AI 서비스 예시
 <img src="./images/hyperflow_서비스예시.png">
 
 <br/>
