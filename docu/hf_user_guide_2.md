@@ -98,6 +98,7 @@ FAISS 벡터 데이터베이스를 생성하려면, 먼저 다음과 같은 **�
 ### Product Quantization
 
 **512차원 이상의 고차원 임베딩**을 사용할 경우, Product Quantization(PQ)을 적용하면 정확도 손실을 최소화하면서 메모리 사용량을 획기적으로 줄일 수 있습니다.
+
 ![지식DB생성](./images/hf03_create_kdb.png)
 <br/>
 
