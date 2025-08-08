@@ -123,6 +123,7 @@ HyperFlow는 슈퍼 노드를 여러 기능별 카테고리로 구성하고 있�
 이 노드는 Call LLM (LLM 호출 노드)과 유사하게 동작하지만, 도구를 사용하는 LLM에 특화되어 설계되었습니다. 표준 Call LLM (LLM 호출 노드)과 동일한 서비스 옵션을 지원합니다.
 <br/>
 
+---
 ### 2. Content Processing Nodes (콘텐츠 처리 관련 노드)
 
 ### Import Content (콘텐츠 가져오기 노드)
@@ -160,6 +161,7 @@ HyperFlow는 슈퍼 노드를 여러 기능별 카테고리로 구성하고 있�
 - **Segment Multi-modal PDF** - PDF에서 텍스트와 이미지를 함께 추출
 <br/>
 
+---
 ### 3. Knowledge Base Nodes (지식 베이스 관련 노드)
 
 ### Create Embedding Vectors (임베딩 생성 노드)
@@ -199,6 +201,7 @@ HyperFlow는 슈퍼 노드를 여러 기능별 카테고리로 구성하고 있�
 - **FlashRank Reranker** - 빠른 로컬 순위 재조정 서비스
 <br/>
 
+---
 ### 4. 웹 관련 노드
 
 ### URL Access (URL 접근)
