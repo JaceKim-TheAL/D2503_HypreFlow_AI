@@ -23,17 +23,20 @@
 ---
 ## 3-4.프롬프트 템플릿 설정 가이드
 - Sub-Index
-  - []()
   - [프롬프트 이해하기](#프롬프트-이해하기)
   - [프롬프트 템플릿이란?](#프롬프트-템플릿이란)
   - [에디터 개요](#에디터-개요)
   - [비주얼 에디터 기능](#비주얼-에디터-기능)
   - [JSON 에디터: 템플릿 DSL](#json-에디터-템플릿-dsl)
   - [활용 가이드](#활용-가이드)
+    - [기본 가이드라인](#기본-가이드라인)
+    - [토큰 사용 최적화](#토큰-사용-최적화)
+    - [포맷팅 팁](#포맷팅-팁)
   - [문제 해결 가이드](#문제-해결-가이드)
   - [고급 기술](#고급-기술)
-  - []()
-  - []()
+    - [사용자 정의 헤더와 푸터](#사용자-정의-헤더와-푸터)
+    - [멀티턴 대화 설계](#멀티턴-대화-설계)
+  - [템플릿 동작 확인하기](#템플릿-동작-확인하기)
   - [마무리](#마무리)
 
 ---  
@@ -426,15 +429,16 @@ KNOWLEDGE CONTEXT (use these facts to answer the question):
 - **3~5턴의 대화 히스토리**: 일반적인 대화 흐름에 적합
 - **이전 응답 토큰 제한 무제한**: 대화 맥락을 더욱 완전하게 유지
 - **구조화된 지식 포맷**: 턴 간 일관된 정보 전달에 효과적
+<br/>
 
+[[TOP]](#index)
+
+---
 ## 템플릿 동작 확인하기
 
 설계한 템플릿이 적용된 **플로우그래프를 실행하면**, **Run Session Log**에서 최종 복합 프롬프트가 어떻게 구성되었는지 직접 확인할 수 있습니다. 이를 통해 템플릿 설정이 **정상적으로 작동하는지 검증**하고, **각 구성 요소가 어떤 방식으로 조합되는지 시각적으로 이해**할 수 있습니다.
 
 *Run Session Log 내의 Composite Prompt 뷰에서는 템플릿 요소들이 실제로 어떻게 조립되었는지 확인할 수 있습니다.*
-
-![](attachment:7803d15d-3604-4dc1-a588-af7c1868d5c8:Prompt_Template_Editor_Guideimagescomposite-prompt-display.png)
-
 
 <img src="./images/hf03_prompt_template_editor_guide_composite_prompt_display.png" width="400" alt="프롬프트 템플릿 동작 확인">
 <!-- ![Prompt Template](./images/hf03_prompt_template_editor_guide_composite_prompt_display.png) -->
