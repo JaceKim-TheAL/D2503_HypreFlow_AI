@@ -12,8 +12,16 @@
   </tr>
 </table>
 
----
 ### 4. 참고용문서
+
+---
+### 참고가이드 링크
+
+- [노드 사용가이드 ][guide_node]
+- [맞춤형 AI 앱 제어 API 가이드][guide_api]
+
+[guide_node]: https://docs.hyperflow-ai.com/173771982bb781e091ceca2491dc4034
+[guide_api]: https://docs.hyperflow-ai.com/AI-API-1c8771982bb780009616e031b1bd3c14
 
 <br/>
 
