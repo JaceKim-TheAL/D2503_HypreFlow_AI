@@ -169,7 +169,11 @@ references: {
 enableRefresh: true,         // 새로고침 버튼 표시 여부
 enableStartNewChat: true,    // 새 대화 시작 버튼 표시 여부
 ```
+<br/>
 
+[[TOP]](#index)
+
+---
 ## CSS 스타일링 커스터마이징
 
 가장 유연한 커스터마이징 방식은 CSS를 직접 사용하는 것입니다. `css` 속성에 템플릿 리터럴(template literal) 형식으로 스타일을 지정할 수 있습니다:
@@ -233,11 +237,6 @@ css: css`
 `
 ```
 
-<br/>
-
-[[TOP]](#index)
-
----
 ### CSS 애니메이션 예시
 
 ```jsx
