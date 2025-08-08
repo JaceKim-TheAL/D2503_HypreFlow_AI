@@ -12,6 +12,7 @@
   </tr>
 </table>
 
+<!-- 
 ---
 ### 환영합니다
 
@@ -58,6 +59,8 @@
 🔗 HyperFlow 카카오톡 오픈채팅방
 
 🔗 HyperFlow [Youtube 채널](https://www.youtube.com/channel/UCo66M4KjnokqMyJkctx6fLg) 튜토리얼 비디오
+-->
+
 <br/>
 
 [[TOP]](#index)
