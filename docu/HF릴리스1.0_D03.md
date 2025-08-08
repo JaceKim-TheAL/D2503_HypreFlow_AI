@@ -8,11 +8,11 @@
     <td><a href="./HF릴리스1.0_D02.md">2.구축및실행</a></td>
     <td>
         <b href="./HF릴리스1.0_D03.md">3.사용가이드</b><br/>
-        <a href="./hf_user_guide_1.md">[1]</a>
-        <a href="./hf_user_guide_2.md">[2]</a>
-        <a href="./hf_user_guide_3.md">[3]</a>
-        <a href="./hf_user_guide_4.md">[4]</a>
-        <a href="./hf_user_guide_5.md">[5]</a>
+        <a href="./hf_user_guide_1.md">1️⃣</a>
+        <a href="./hf_user_guide_2.md">2️⃣</a>
+        <a href="./hf_user_guide_3.md">3️⃣</a>
+        <a href="./hf_user_guide_4.md">4️⃣</a>
+        <a href="./hf_user_guide_5.md">5️⃣</a>
     </td>
     <td><a href="./HF릴리스1.0_D04.md">4.참고용문서</a></td>
     <td><a href="./HF릴리스1.0_D05.md">5.관련리소스</a></td>
