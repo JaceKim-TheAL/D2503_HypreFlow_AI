@@ -10,7 +10,7 @@
     <td><a href="./HF릴리스1.0_D04.md">4.참고용문서</a></td>
     <td><a href="./HF릴리스1.0_D05.md">5.관련리소스</a></td>
   </tr>
-  <tr>
+  <tr height="50">
     <td></td>
     <td></td>
     <td><a href="./hf_user_guide_1.md">[1]</a
