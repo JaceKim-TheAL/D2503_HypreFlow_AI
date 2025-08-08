@@ -37,7 +37,7 @@
 
 프롬프트 템플릿 에디터는 **언어 모델에게 전송되는 프롬프트 내 정보를 어떻게 구성하고 포맷할지 편집할 수 있는 강력한 도구**입니다. 이 가이드는 프롬프트 에디터의 주요 기능을 이해하고, **효과적인 프롬프트를 설계하기 위한 권장 방식**을 소개합니다.
 
-<img src="./images/hf03_prompt_template.png" width="300" alt="프롬프트 템플릿 에디터">
+<img src="./images/hf03_prompt_template.png" width="400" alt="프롬프트 템플릿 에디터">
 <!-- ![Prompt Template](./images/hf03_prompt_template.png) -->
 
 *시각적으로 편집 가능한 프롬프트 템플릿 에디터 화면*
