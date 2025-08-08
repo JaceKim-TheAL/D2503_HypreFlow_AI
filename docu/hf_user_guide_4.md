@@ -435,6 +435,11 @@ KNOWLEDGE CONTEXT (use these facts to answer the question):
 
 ![](attachment:7803d15d-3604-4dc1-a588-af7c1868d5c8:Prompt_Template_Editor_Guideimagescomposite-prompt-display.png)
 
+
+<img src="./images/hf03_prompt_template_editor_guide_composite_prompt_display.png" width="400" alt="프롬프트 템플릿 동작 확인">
+<!-- ![Prompt Template](./images/hf03_prompt_template_editor_guide_composite_prompt_display.png) -->
+
+
 ### 복합 프롬프트 보기 이해하기
 
 **Composite Prompt** 섹션에서는 LLM에게 전달되는 최종 프롬프트의 구성 요소를 테이블 형식으로 보여줍니다:
