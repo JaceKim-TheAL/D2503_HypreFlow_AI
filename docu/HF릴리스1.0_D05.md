@@ -32,7 +32,7 @@
 [tutorial_6]: https://www.youtube.com/watch?v=HPARU_jNDSU
 
 
--[ HyperFlow 통합개발환경](https://hyperflow-ai.com/hyperflow/account-home/projects)
+- HyperFlow 통합개발환경 : [hyperflow-ai.com/hyperflow]((https://hyperflow-ai.com/hyperflow/account-home/projects)) 
 
 
 <br/>
