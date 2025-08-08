@@ -10,6 +10,18 @@
     <td><a href="./HF릴리스1.0_D04.md">4.참고용문서</a></td>
     <td><a href="./HF릴리스1.0_D05.md">5.관련리소스</a></td>
   </tr>
+    <tr height="20">
+      <td></td>
+      <td></td>
+      <td><a href="./hf_user_guide_1.md">[1]</a
+         ><a href="./hf_user_guide_2.md">[2]</a
+         ><b href="./hf_user_guide_3.md">[3]</b
+         ><a href="./hf_user_guide_4.md">[4]</a
+         ><a href="./hf_user_guide_5.md">[5]</a>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
 </table>
 
 ## 3. 사용가이드
