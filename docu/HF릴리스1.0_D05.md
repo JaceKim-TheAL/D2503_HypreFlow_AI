@@ -24,15 +24,15 @@
 - [5. 플로우 그래프를 실제 서비스로 배포하기   ][tutorial_5]
 - [6. 하이퍼플로우 Control API 활용 가이드   ][tutorial_6]
 
-[tutorial_1] : https://www.youtube.com/watch?v=2zuNODMr2ps
-[tutorial_2] : https://www.youtube.com/watch?v=SNnMl4K1EMU
-[tutorial_3] : https://www.youtube.com/watch?v=buP1KP7VxqQ
-[tutorial_4] : https://www.youtube.com/watch?v=rFAqmfaoYsY
-[tutorial_5] : https://www.youtube.com/watch?v=_Bd2YxwZp8M
-[tutorial_6] : https://www.youtube.com/watch?v=HPARU_jNDSU
+[tutorial_1]: https://www.youtube.com/watch?v=2zuNODMr2ps
+[tutorial_2]: https://www.youtube.com/watch?v=SNnMl4K1EMU
+[tutorial_3]: https://www.youtube.com/watch?v=buP1KP7VxqQ
+[tutorial_4]: https://www.youtube.com/watch?v=rFAqmfaoYsY
+[tutorial_5]: https://www.youtube.com/watch?v=_Bd2YxwZp8M
+[tutorial_6]: https://www.youtube.com/watch?v=HPARU_jNDSU
 
 
-- HyperFlow 통합개발환경 : https://hyperflow-ai.com/hyperflow/account-home/projects
+-[ HyperFlow 통합개발환경](https://hyperflow-ai.com/hyperflow/account-home/projects)
 
 
 <br/>
