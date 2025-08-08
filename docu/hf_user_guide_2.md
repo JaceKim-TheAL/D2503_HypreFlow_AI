@@ -21,24 +21,32 @@
 - [[3-5.RAG 애플리케이션에서 출처 인용을 지시하는 팁/가이드]](#3-5rag-애플리케이션에서-출처-인용을-지시하는-팁가이드)
 
 ---
-# 3-2.FAISS 벡터 DB 활용을 위한 실전 가이드
+## 3-2.FAISS 벡터 DB 활용을 위한 실전 가이드
+- Sub-Index
+  - [개요](#개요)
+  - [FAISS 벡터 DB 생성하기](#faiss-벡터-db-생성하기)
+  - [FAISS 벡터 DB 검색하기](#faiss-벡터-db-검색하기)
+  - [성능 고려사항](#성능-고려사항)
+  - [문제 해결 가이드](#문제-해결-가이드)
 
+---
 ## 소개
 
 HyperFlow에서 제공하는 **FAISS (Facebook AI Similarity Search)** 벡터 데이터베이스 서비스는 임베딩 기반의 **고성능 유사도 검색** 기능을 지원합니다. 이 가이드는 FAISS 벡터 DB를 **생성하고 검색하는 방법**을 중심으로, **대규모 임베딩 모델을 위한 메모리 효율적 접근 방식인 PQ(Product Quantization)** 활용법에 초점을 맞춰 설명합니다.
-
+<!-- 
 ## Table of Contents
 
-1. [개요](about:blank#overview)
-2. [FAISS 벡터 DB 생성하기](about:blank#creating-a-faiss-vector-database)
-    - [기본 설정](about:blank#basic-settings)
-    - [인덱스 타입](about:blank#index-types)
+1. [Overview](about:blank#overview)
+2. [Creating a FAISS Vector Database](about:blank#creating-a-faiss-vector-database)
+    - [Basic Settings](about:blank#basic-settings)
+    - [Index Types](about:blank#index-types)
     - [Product Quantization](about:blank#product-quantization)
 3. [Searching a FAISS Vector Database](about:blank#searching-a-faiss-vector-database)
     - [Search Parameters](about:blank#search-parameters)
     - [Optimizing PQ Search](about:blank#optimizing-pq-search)
 4. [Performance Considerations](about:blank#performance-considerations)
-5. [Troubleshooting](about:blank#troubleshooting)
+5. [Troubleshooting](about:blank#troubleshooting) 
+-->
 
 ## 개요
 
@@ -49,6 +57,11 @@ HyperFlow에서 제공하는 **FAISS (Facebook AI Similarity Search)** 벡터 �
 - 속도와 정확도의 균형을 조절할 수 있는 **검색 파라미터 설정 기능**
 - 컨테이너 환경에 최적화된 **자동 성능 조정 기능**
 
+<br/> 
+
+[[TOP]](#index)
+
+---
 ## FAISS 벡터 DB 생성하기
 
 ### 기본 설정
@@ -109,9 +122,13 @@ FAISS 벡터 데이터베이스를 생성하려면, 먼저 다음과 같은 **�
 
 > !중요: Subquantizer의 수(m)은 반드시 **임베딩 차원 수의 약수**여야 합니다. 필요한 경우, 시스템에서 이 값을 자동으로 조정합니다.
 > 
+
 <br/> 
 
-## FAISS 벡터 데이터베이스 검색하기
+[[TOP]](#index)
+
+---
+## FAISS 벡터 DB 검색하기
 
 ### 검색 파라미터
 
@@ -166,7 +183,11 @@ PQ를 적용해 FAISS 검색하기
     
     → `Refinement factor`를 **8 이상**으로 높이세요.
     
+<br/> 
 
+[[TOP]](#index)
+
+---
 ## 성능 고려사항
 
 ### 메모리 사용량
@@ -200,7 +221,11 @@ FAISS는 Azure Container Apps, Kubernetes 등 **컨테이너 환경**에서의 �
     
     특히 **Precomputed Table**을 사용할 경우 성능이 더욱 향상됩니다.
     
+<br/> 
 
+[[TOP]](#index)
+
+---
 ## 문제 해결 가이드
 
 ### PQ 사용 시 검색 결과가 부정확할 때
@@ -239,7 +264,6 @@ FAISS 사용 중 **메모리 부족 오류(Out of Memory)**가 발생하는 경�
 ---
 
 *FAISS 및 벡터 검색 개념에 대한 보다 심화된 내용은 [**FAISS 공식 문서**](https://github.com/facebookresearch/faiss/wiki)를 참고하시기 바랍니다.*
-
 
 <br/>
 
