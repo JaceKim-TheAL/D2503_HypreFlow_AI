@@ -23,7 +23,7 @@
 ---
 ## 3-3.챗봇 스타일링 고급 설정 가이드
 
-# EmbeddableBot 스타일링 가이드
+## EmbeddableBot 스타일링 가이드
 
 ## 소개
 
@@ -99,7 +99,7 @@ header: {
 
 챗봇의 **응답 메시지 스타일과 표시 방식**을 원하는 대로 커스터마이징할 수 있습니다:
 
-```json
+```jsx
 response: {
   iconSrc: "/path/to/icon.svg", // 챗봇 응답 메시지 옆에 표시될 기본 아이콘
   exceptionIconSrc: "/path/to/error-icon.svg", // 오류 발생 시 표시할 아이콘
@@ -114,7 +114,7 @@ response: {
 
 사용자가 메시지를 입력하는 입력창의 스타일과 동작을 설정할 수 있습니다:
 
-```json
+```jsx
 prompt: {
   iconSrc: "/path/to/icon.svg", // 입력창 왼쪽에 표시될 아이콘
   sendIconSrc: "/path/to/send-button.svg", // 전송 버튼 아이콘
