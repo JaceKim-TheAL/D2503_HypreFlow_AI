@@ -30,10 +30,12 @@
 [tutorial_4]: https://www.youtube.com/watch?v=rFAqmfaoYsY
 [tutorial_5]: https://www.youtube.com/watch?v=_Bd2YxwZp8M
 [tutorial_6]: https://www.youtube.com/watch?v=HPARU_jNDSU
+<br/>
 
+### 하이퍼플로우 개발
 
 - HyperFlow 통합개발환경 : [hyperflow-ai.com/hyperflow]((https://hyperflow-ai.com/hyperflow/account-home/projects)) 
-
+- HyperFlow 커뮤티니지원 : Discord
 
 <br/>
 
