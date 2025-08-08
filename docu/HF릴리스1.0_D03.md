@@ -3,7 +3,7 @@
 ### INDEX
 
 <table>
-  <tr>
+  <tr valign="top">
     <td><a href="./HF릴리스1.0_D01.md">1.릴리스노트</a></td>
     <td><a href="./HF릴리스1.0_D02.md">2.구축및실행</a></td>
     <td>
