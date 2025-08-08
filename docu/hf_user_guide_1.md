@@ -77,6 +77,7 @@
 ## 슈퍼 노드의 분류 및 지원 서비스
 
 HyperFlow는 슈퍼 노드를 여러 기능별 카테고리로 구성하고 있습니다. 이 섹션에서는 주요 노드 유형과 각 노드에서 사용할 수 있는 서비스 구현체를 안내합니다.
+<br/>
 
 ### 1. LLM 인터랙션 노드
 
@@ -120,6 +121,7 @@ HyperFlow는 슈퍼 노드를 여러 기능별 카테고리로 구성하고 있�
 ### Call LLM with Tools (도구를 사용한 LLM 호출 노드)
 
 이 노드는 Call LLM (LLM 호출 노드)과 유사하게 동작하지만, 도구를 사용하는 LLM에 특화되어 설계되었습니다. 표준 Call LLM (LLM 호출 노드)과 동일한 서비스 옵션을 지원합니다.
+<br/>
 
 ### 2. Content Processing Nodes (콘텐츠 처리 관련 노드)
 
@@ -156,6 +158,7 @@ HyperFlow는 슈퍼 노드를 여러 기능별 카테고리로 구성하고 있�
 - **Segment HTML** - 웹 콘텐츠 전용 분할
 - **Segment Text** - 일반 텍스트 문서용 분할
 - **Segment Multi-modal PDF** - PDF에서 텍스트와 이미지를 함께 추출
+<br/>
 
 ### 3. Knowledge Base Nodes (지식 베이스 관련 노드)
 
@@ -194,6 +197,7 @@ HyperFlow는 슈퍼 노드를 여러 기능별 카테고리로 구성하고 있�
 **지원 서비스:**
 - **Cohere Reranker** - Cohere의 순위 재조정 서비스
 - **FlashRank Reranker** - 빠른 로컬 순위 재조정 서비스
+<br/>
 
 ### 4. 웹 관련 노드
 
