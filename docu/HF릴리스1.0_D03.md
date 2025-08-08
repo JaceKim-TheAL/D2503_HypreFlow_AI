@@ -7,7 +7,7 @@
     <td><a href="./HF릴리스1.0_D01.md">1.릴리스노트</a></td>
     <td><a href="./HF릴리스1.0_D02.md">2.구축및실행</a></td>
     <td>
-        <b href="./HF릴리스1.0_D03.md">3.사용가이드</b>
+        <b href="./HF릴리스1.0_D03.md">3.사용가이드</b><br/>
         <a href="./hf_user_guide_1.md">[1]</a>
         <a href="./hf_user_guide_2.md">[2]</a>
         <a href="./hf_user_guide_3.md">[3]</a>
